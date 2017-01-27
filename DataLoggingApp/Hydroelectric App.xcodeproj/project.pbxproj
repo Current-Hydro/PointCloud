@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		558DC130099734DAC8E0AAC7 /* Pods_Hydroelectric_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507DC13FD31D4AFC6E2C1B /* Pods_Hydroelectric_AppTests.framework */; };
+		8BCBE670E05BED23ED3BFDD7 /* Pods_Hydroelectric_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0287FE360E8804CDCB1A6BA3 /* Pods_Hydroelectric_AppUITests.framework */; };
 		9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98721E3B027F00EABA48 /* AppDelegate.swift */; };
 		9EFF98751E3B027F00EABA48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98741E3B027F00EABA48 /* ViewController.swift */; };
 		9EFF98781E3B027F00EABA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF98761E3B027F00EABA48 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		9EFF987D1E3B027F00EABA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF987B1E3B027F00EABA48 /* LaunchScreen.storyboard */; };
 		9EFF98881E3B027F00EABA48 /* DataLoggingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98871E3B027F00EABA48 /* DataLoggingAppTests.swift */; };
 		9EFF98931E3B027F00EABA48 /* DataLoggingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98921E3B027F00EABA48 /* DataLoggingAppUITests.swift */; };
+		EBEB34E693A3E7AA2C7B9E27 /* Pods_Hydroelectric_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52155F4756465A7BBEC50FE8 /* Pods_Hydroelectric_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0287FE360E8804CDCB1A6BA3 /* Pods_Hydroelectric_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydroelectric_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BE667315E2B7D2DDBEF93 /* Pods-Hydroelectric App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric App/Pods-Hydroelectric App.release.xcconfig"; sourceTree = "<group>"; };
+		52155F4756465A7BBEC50FE8 /* Pods_Hydroelectric_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydroelectric_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		593F25F42831259EC038A1FE /* Pods-Hydroelectric AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppTests/Pods-Hydroelectric AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D2393928F0BC8D0B2704724 /* Pods-Hydroelectric App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric App/Pods-Hydroelectric App.debug.xcconfig"; sourceTree = "<group>"; };
+		85A55203737B5A042FC02D85 /* Pods-Hydroelectric AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E2C8FD3ACD3DB778A797CC4 /* Pods-Hydroelectric AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFF986F1E3B027F00EABA48 /* Hydroelectric App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydroelectric App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFF98721E3B027F00EABA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EFF98741E3B027F00EABA48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		9EFF988E1E3B027F00EABA48 /* Hydroelectric AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hydroelectric AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFF98921E3B027F00EABA48 /* DataLoggingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoggingAppUITests.swift; sourceTree = "<group>"; };
 		9EFF98941E3B027F00EABA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD39F78D4A8EED360FC6D26E /* Pods-Hydroelectric AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppTests/Pods-Hydroelectric AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2507DC13FD31D4AFC6E2C1B /* Pods_Hydroelectric_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydroelectric_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEB34E693A3E7AA2C7B9E27 /* Pods_Hydroelectric_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558DC130099734DAC8E0AAC7 /* Pods_Hydroelectric_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCBE670E05BED23ED3BFDD7 /* Pods_Hydroelectric_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				9EFF98861E3B027F00EABA48 /* DataLoggingAppTests */,
 				9EFF98911E3B027F00EABA48 /* DataLoggingAppUITests */,
 				9EFF98701E3B027F00EABA48 /* Products */,
+				C782338C5FF1E5EDB53A4394 /* Pods */,
+				BDC2C4866C460B12DC262FA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = DataLoggingAppUITests;
 			sourceTree = "<group>";
 		};
+		BDC2C4866C460B12DC262FA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52155F4756465A7BBEC50FE8 /* Pods_Hydroelectric_App.framework */,
+				D2507DC13FD31D4AFC6E2C1B /* Pods_Hydroelectric_AppTests.framework */,
+				0287FE360E8804CDCB1A6BA3 /* Pods_Hydroelectric_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C782338C5FF1E5EDB53A4394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D2393928F0BC8D0B2704724 /* Pods-Hydroelectric App.debug.xcconfig */,
+				451BE667315E2B7D2DDBEF93 /* Pods-Hydroelectric App.release.xcconfig */,
+				593F25F42831259EC038A1FE /* Pods-Hydroelectric AppTests.debug.xcconfig */,
+				AD39F78D4A8EED360FC6D26E /* Pods-Hydroelectric AppTests.release.xcconfig */,
+				8E2C8FD3ACD3DB778A797CC4 /* Pods-Hydroelectric AppUITests.debug.xcconfig */,
+				85A55203737B5A042FC02D85 /* Pods-Hydroelectric AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFF98971E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric App" */;
 			buildPhases = (
+				DE41339CBE2733F973132A37 /* [CP] Check Pods Manifest.lock */,
 				9EFF986B1E3B027F00EABA48 /* Sources */,
 				9EFF986C1E3B027F00EABA48 /* Frameworks */,
 				9EFF986D1E3B027F00EABA48 /* Resources */,
+				1ED4A09DC9782FE36CFC9E80 /* [CP] Embed Pods Frameworks */,
+				CAE8755A22A6DF45D9F19675 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFF989A1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppTests" */;
 			buildPhases = (
+				4FA76D9A7BDA5F8C9081BB7C /* [CP] Check Pods Manifest.lock */,
 				9EFF987F1E3B027F00EABA48 /* Sources */,
 				9EFF98801E3B027F00EABA48 /* Frameworks */,
 				9EFF98811E3B027F00EABA48 /* Resources */,
+				7505C9295D6FE71F13B6CFAA /* [CP] Embed Pods Frameworks */,
+				08EC00789F37013BA03F559A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EFF989D1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppUITests" */;
 			buildPhases = (
+				62D0F3687ACA58C648E01AA0 /* [CP] Check Pods Manifest.lock */,
 				9EFF988A1E3B027F00EABA48 /* Sources */,
 				9EFF988B1E3B027F00EABA48 /* Frameworks */,
 				9EFF988C1E3B027F00EABA48 /* Resources */,
+				30CDFFC6DB3B84F7EFA7AB0E /* [CP] Embed Pods Frameworks */,
+				79FD7321AA6646CE0B4C8040 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08EC00789F37013BA03F559A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hydroelectric AppTests/Pods-Hydroelectric AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1ED4A09DC9782FE36CFC9E80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hydroelectric App/Pods-Hydroelectric App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30CDFFC6DB3B84F7EFA7AB0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA76D9A7BDA5F8C9081BB7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62D0F3687ACA58C648E01AA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7505C9295D6FE71F13B6CFAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hydroelectric AppTests/Pods-Hydroelectric AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79FD7321AA6646CE0B4C8040 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAE8755A22A6DF45D9F19675 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hydroelectric App/Pods-Hydroelectric App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE41339CBE2733F973132A37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EFF986B1E3B027F00EABA48 /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		9EFF98981E3B027F00EABA48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D2393928F0BC8D0B2704724 /* Pods-Hydroelectric App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataLoggingApp/Info.plist;
@@ -422,6 +610,7 @@
 		};
 		9EFF98991E3B027F00EABA48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451BE667315E2B7D2DDBEF93 /* Pods-Hydroelectric App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataLoggingApp/Info.plist;
@@ -434,6 +623,7 @@
 		};
 		9EFF989B1E3B027F00EABA48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593F25F42831259EC038A1FE /* Pods-Hydroelectric AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +638,7 @@
 		};
 		9EFF989C1E3B027F00EABA48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD39F78D4A8EED360FC6D26E /* Pods-Hydroelectric AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +653,7 @@
 		};
 		9EFF989E1E3B027F00EABA48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2C8FD3ACD3DB778A797CC4 /* Pods-Hydroelectric AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DataLoggingAppUITests/Info.plist;
@@ -475,6 +667,7 @@
 		};
 		9EFF989F1E3B027F00EABA48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85A55203737B5A042FC02D85 /* Pods-Hydroelectric AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DataLoggingAppUITests/Info.plist;
