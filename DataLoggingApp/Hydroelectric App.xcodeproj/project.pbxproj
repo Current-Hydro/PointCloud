@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98721E3B027F00EABA48 /* AppDelegate.swift */; };
+		9EFF98751E3B027F00EABA48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98741E3B027F00EABA48 /* ViewController.swift */; };
+		9EFF98781E3B027F00EABA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF98761E3B027F00EABA48 /* Main.storyboard */; };
+		9EFF987A1E3B027F00EABA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF98791E3B027F00EABA48 /* Assets.xcassets */; };
+		9EFF987D1E3B027F00EABA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF987B1E3B027F00EABA48 /* LaunchScreen.storyboard */; };
+		9EFF98881E3B027F00EABA48 /* DataLoggingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98871E3B027F00EABA48 /* DataLoggingAppTests.swift */; };
+		9EFF98931E3B027F00EABA48 /* DataLoggingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98921E3B027F00EABA48 /* DataLoggingAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EFF98841E3B027F00EABA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFF98671E3B027F00EABA48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFF986E1E3B027F00EABA48;
+			remoteInfo = DataLoggingApp;
+		};
+		9EFF988F1E3B027F00EABA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFF98671E3B027F00EABA48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFF986E1E3B027F00EABA48;
+			remoteInfo = DataLoggingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EFF986F1E3B027F00EABA48 /* Hydroelectric App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydroelectric App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFF98721E3B027F00EABA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EFF98741E3B027F00EABA48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EFF98771E3B027F00EABA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EFF98791E3B027F00EABA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EFF987C1E3B027F00EABA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EFF987E1E3B027F00EABA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFF98831E3B027F00EABA48 /* Hydroelectric AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hydroelectric AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFF98871E3B027F00EABA48 /* DataLoggingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoggingAppTests.swift; sourceTree = "<group>"; };
+		9EFF98891E3B027F00EABA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFF988E1E3B027F00EABA48 /* Hydroelectric AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hydroelectric AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFF98921E3B027F00EABA48 /* DataLoggingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoggingAppUITests.swift; sourceTree = "<group>"; };
+		9EFF98941E3B027F00EABA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EFF986C1E3B027F00EABA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF98801E3B027F00EABA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF988B1E3B027F00EABA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EFF98661E3B027F00EABA48 = {
+			isa = PBXGroup;
+			children = (
+				9EFF98711E3B027F00EABA48 /* DataLoggingApp */,
+				9EFF98861E3B027F00EABA48 /* DataLoggingAppTests */,
+				9EFF98911E3B027F00EABA48 /* DataLoggingAppUITests */,
+				9EFF98701E3B027F00EABA48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EFF98701E3B027F00EABA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF986F1E3B027F00EABA48 /* Hydroelectric App.app */,
+				9EFF98831E3B027F00EABA48 /* Hydroelectric AppTests.xctest */,
+				9EFF988E1E3B027F00EABA48 /* Hydroelectric AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EFF98711E3B027F00EABA48 /* DataLoggingApp */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF98721E3B027F00EABA48 /* AppDelegate.swift */,
+				9EFF98741E3B027F00EABA48 /* ViewController.swift */,
+				9EFF98761E3B027F00EABA48 /* Main.storyboard */,
+				9EFF98791E3B027F00EABA48 /* Assets.xcassets */,
+				9EFF987B1E3B027F00EABA48 /* LaunchScreen.storyboard */,
+				9EFF987E1E3B027F00EABA48 /* Info.plist */,
+			);
+			path = DataLoggingApp;
+			sourceTree = "<group>";
+		};
+		9EFF98861E3B027F00EABA48 /* DataLoggingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF98871E3B027F00EABA48 /* DataLoggingAppTests.swift */,
+				9EFF98891E3B027F00EABA48 /* Info.plist */,
+			);
+			path = DataLoggingAppTests;
+			sourceTree = "<group>";
+		};
+		9EFF98911E3B027F00EABA48 /* DataLoggingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFF98921E3B027F00EABA48 /* DataLoggingAppUITests.swift */,
+				9EFF98941E3B027F00EABA48 /* Info.plist */,
+			);
+			path = DataLoggingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EFF986E1E3B027F00EABA48 /* Hydroelectric App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFF98971E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric App" */;
+			buildPhases = (
+				9EFF986B1E3B027F00EABA48 /* Sources */,
+				9EFF986C1E3B027F00EABA48 /* Frameworks */,
+				9EFF986D1E3B027F00EABA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hydroelectric App";
+			productName = DataLoggingApp;
+			productReference = 9EFF986F1E3B027F00EABA48 /* Hydroelectric App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EFF98821E3B027F00EABA48 /* Hydroelectric AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFF989A1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppTests" */;
+			buildPhases = (
+				9EFF987F1E3B027F00EABA48 /* Sources */,
+				9EFF98801E3B027F00EABA48 /* Frameworks */,
+				9EFF98811E3B027F00EABA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFF98851E3B027F00EABA48 /* PBXTargetDependency */,
+			);
+			name = "Hydroelectric AppTests";
+			productName = DataLoggingAppTests;
+			productReference = 9EFF98831E3B027F00EABA48 /* Hydroelectric AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EFF988D1E3B027F00EABA48 /* Hydroelectric AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFF989D1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppUITests" */;
+			buildPhases = (
+				9EFF988A1E3B027F00EABA48 /* Sources */,
+				9EFF988B1E3B027F00EABA48 /* Frameworks */,
+				9EFF988C1E3B027F00EABA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFF98901E3B027F00EABA48 /* PBXTargetDependency */,
+			);
+			name = "Hydroelectric AppUITests";
+			productName = DataLoggingAppUITests;
+			productReference = 9EFF988E1E3B027F00EABA48 /* Hydroelectric AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EFF98671E3B027F00EABA48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jason Chang";
+				TargetAttributes = {
+					9EFF986E1E3B027F00EABA48 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					9EFF98821E3B027F00EABA48 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EFF986E1E3B027F00EABA48;
+					};
+					9EFF988D1E3B027F00EABA48 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EFF986E1E3B027F00EABA48;
+					};
+				};
+			};
+			buildConfigurationList = 9EFF986A1E3B027F00EABA48 /* Build configuration list for PBXProject "Hydroelectric App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EFF98661E3B027F00EABA48;
+			productRefGroup = 9EFF98701E3B027F00EABA48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EFF986E1E3B027F00EABA48 /* Hydroelectric App */,
+				9EFF98821E3B027F00EABA48 /* Hydroelectric AppTests */,
+				9EFF988D1E3B027F00EABA48 /* Hydroelectric AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EFF986D1E3B027F00EABA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFF987D1E3B027F00EABA48 /* LaunchScreen.storyboard in Resources */,
+				9EFF987A1E3B027F00EABA48 /* Assets.xcassets in Resources */,
+				9EFF98781E3B027F00EABA48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF98811E3B027F00EABA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF988C1E3B027F00EABA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EFF986B1E3B027F00EABA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFF98751E3B027F00EABA48 /* ViewController.swift in Sources */,
+				9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF987F1E3B027F00EABA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFF98881E3B027F00EABA48 /* DataLoggingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF988A1E3B027F00EABA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFF98931E3B027F00EABA48 /* DataLoggingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EFF98851E3B027F00EABA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFF986E1E3B027F00EABA48 /* Hydroelectric App */;
+			targetProxy = 9EFF98841E3B027F00EABA48 /* PBXContainerItemProxy */;
+		};
+		9EFF98901E3B027F00EABA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFF986E1E3B027F00EABA48 /* Hydroelectric App */;
+			targetProxy = 9EFF988F1E3B027F00EABA48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EFF98761E3B027F00EABA48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EFF98771E3B027F00EABA48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EFF987B1E3B027F00EABA48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EFF987C1E3B027F00EABA48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EFF98951E3B027F00EABA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EFF98961E3B027F00EABA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EFF98981E3B027F00EABA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DataLoggingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jzchang.DataLoggingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9EFF98991E3B027F00EABA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DataLoggingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jzchang.DataLoggingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9EFF989B1E3B027F00EABA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DataLoggingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jzchang.DataLoggingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydroelectric App.app/Hydroelectric App";
+			};
+			name = Debug;
+		};
+		9EFF989C1E3B027F00EABA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DataLoggingAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jzchang.DataLoggingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydroelectric App.app/Hydroelectric App";
+			};
+			name = Release;
+		};
+		9EFF989E1E3B027F00EABA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DataLoggingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jzchang.DataLoggingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DataLoggingApp;
+			};
+			name = Debug;
+		};
+		9EFF989F1E3B027F00EABA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DataLoggingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jzchang.DataLoggingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DataLoggingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EFF986A1E3B027F00EABA48 /* Build configuration list for PBXProject "Hydroelectric App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFF98951E3B027F00EABA48 /* Debug */,
+				9EFF98961E3B027F00EABA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFF98971E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFF98981E3B027F00EABA48 /* Debug */,
+				9EFF98991E3B027F00EABA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EFF989A1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFF989B1E3B027F00EABA48 /* Debug */,
+				9EFF989C1E3B027F00EABA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EFF989D1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFF989E1E3B027F00EABA48 /* Debug */,
+				9EFF989F1E3B027F00EABA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EFF98671E3B027F00EABA48 /* Project object */;
+}
