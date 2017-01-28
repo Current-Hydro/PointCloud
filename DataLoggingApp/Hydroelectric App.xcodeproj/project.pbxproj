@@ -10,7 +10,7 @@
 		558DC130099734DAC8E0AAC7 /* Pods_Hydroelectric_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507DC13FD31D4AFC6E2C1B /* Pods_Hydroelectric_AppTests.framework */; };
 		8BCBE670E05BED23ED3BFDD7 /* Pods_Hydroelectric_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0287FE360E8804CDCB1A6BA3 /* Pods_Hydroelectric_AppUITests.framework */; };
 		9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98721E3B027F00EABA48 /* AppDelegate.swift */; };
-		9EFF98751E3B027F00EABA48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98741E3B027F00EABA48 /* ViewController.swift */; };
+		9EFF98751E3B027F00EABA48 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98741E3B027F00EABA48 /* LoginPage.swift */; };
 		9EFF98781E3B027F00EABA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF98761E3B027F00EABA48 /* Main.storyboard */; };
 		9EFF987A1E3B027F00EABA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF98791E3B027F00EABA48 /* Assets.xcassets */; };
 		9EFF987D1E3B027F00EABA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF987B1E3B027F00EABA48 /* LaunchScreen.storyboard */; };
@@ -46,7 +46,7 @@
 		8E2C8FD3ACD3DB778A797CC4 /* Pods-Hydroelectric AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFF986F1E3B027F00EABA48 /* Hydroelectric App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydroelectric App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFF98721E3B027F00EABA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9EFF98741E3B027F00EABA48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EFF98741E3B027F00EABA48 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		9EFF98771E3B027F00EABA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EFF98791E3B027F00EABA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EFF987C1E3B027F00EABA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,8 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				9EFF98721E3B027F00EABA48 /* AppDelegate.swift */,
-				9EFF98741E3B027F00EABA48 /* ViewController.swift */,
 				9EFF98761E3B027F00EABA48 /* Main.storyboard */,
+				9EFF98741E3B027F00EABA48 /* LoginPage.swift */,
 				9EFF98791E3B027F00EABA48 /* Assets.xcassets */,
 				9EFF987B1E3B027F00EABA48 /* LaunchScreen.storyboard */,
 				9EFF987E1E3B027F00EABA48 /* Info.plist */,
@@ -446,7 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EFF98751E3B027F00EABA48 /* ViewController.swift in Sources */,
+				9EFF98751E3B027F00EABA48 /* LoginPage.swift in Sources */,
 				9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,6 +698,7 @@
 				9EFF98991E3B027F00EABA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EFF989A1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +707,7 @@
 				9EFF989C1E3B027F00EABA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EFF989D1E3B027F00EABA48 /* Build configuration list for PBXNativeTarget "Hydroelectric AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +716,7 @@
 				9EFF989F1E3B027F00EABA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
