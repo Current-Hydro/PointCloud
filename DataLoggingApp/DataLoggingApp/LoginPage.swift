@@ -10,7 +10,7 @@ import UIKit
 import Bolts
 import Parse
 
-class ViewController: UIViewController {
+class LoginPage: UIViewController {
     
     // Activity Indicator
     var activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y:0, width: 50, height:50))
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
                         print(currentUser?.username ?? String())
                         // Perform Segue to TableView
                         print("Logged in")
-                        self.performSegue(withIdentifier:"showNotesTableView", sender: self)
+                        self.performSegue(withIdentifier:"loginSuccess", sender: self)
                     } else {
                         // There was some error
                     }

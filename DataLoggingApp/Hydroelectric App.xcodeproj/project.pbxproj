@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		558DC130099734DAC8E0AAC7 /* Pods_Hydroelectric_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2507DC13FD31D4AFC6E2C1B /* Pods_Hydroelectric_AppTests.framework */; };
 		8BCBE670E05BED23ED3BFDD7 /* Pods_Hydroelectric_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0287FE360E8804CDCB1A6BA3 /* Pods_Hydroelectric_AppUITests.framework */; };
+		9EA099341E3C5D33008FBE85 /* RecentlyPostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA099331E3C5D33008FBE85 /* RecentlyPostedViewController.swift */; };
+		9EA099371E3C5D62008FBE85 /* SavedObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA099361E3C5D62008FBE85 /* SavedObservationsViewController.swift */; };
+		9EA099391E3C5D93008FBE85 /* NewObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA099381E3C5D93008FBE85 /* NewObservationViewController.swift */; };
 		9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98721E3B027F00EABA48 /* AppDelegate.swift */; };
 		9EFF98751E3B027F00EABA48 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF98741E3B027F00EABA48 /* LoginPage.swift */; };
 		9EFF98781E3B027F00EABA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EFF98761E3B027F00EABA48 /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		5D2393928F0BC8D0B2704724 /* Pods-Hydroelectric App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric App/Pods-Hydroelectric App.debug.xcconfig"; sourceTree = "<group>"; };
 		85A55203737B5A042FC02D85 /* Pods-Hydroelectric AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E2C8FD3ACD3DB778A797CC4 /* Pods-Hydroelectric AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydroelectric AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hydroelectric AppUITests/Pods-Hydroelectric AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EA099331E3C5D33008FBE85 /* RecentlyPostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentlyPostedViewController.swift; sourceTree = "<group>"; };
+		9EA099361E3C5D62008FBE85 /* SavedObservationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedObservationsViewController.swift; sourceTree = "<group>"; };
+		9EA099381E3C5D93008FBE85 /* NewObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewObservationViewController.swift; sourceTree = "<group>"; };
 		9EFF986F1E3B027F00EABA48 /* Hydroelectric App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydroelectric App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EFF98721E3B027F00EABA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EFF98741E3B027F00EABA48 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
@@ -89,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EA099321E3C5C20008FBE85 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EA099331E3C5D33008FBE85 /* RecentlyPostedViewController.swift */,
+				9EA099361E3C5D62008FBE85 /* SavedObservationsViewController.swift */,
+				9EA099381E3C5D93008FBE85 /* NewObservationViewController.swift */,
+			);
+			name = TabBarControllers;
+			sourceTree = "<group>";
+		};
 		9EFF98661E3B027F00EABA48 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,7 @@
 		9EFF98711E3B027F00EABA48 /* DataLoggingApp */ = {
 			isa = PBXGroup;
 			children = (
+				9EA099321E3C5C20008FBE85 /* TabBarControllers */,
 				9EFF98721E3B027F00EABA48 /* AppDelegate.swift */,
 				9EFF98761E3B027F00EABA48 /* Main.storyboard */,
 				9EFF98741E3B027F00EABA48 /* LoginPage.swift */,
@@ -446,8 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA099341E3C5D33008FBE85 /* RecentlyPostedViewController.swift in Sources */,
+				9EA099371E3C5D62008FBE85 /* SavedObservationsViewController.swift in Sources */,
 				9EFF98751E3B027F00EABA48 /* LoginPage.swift in Sources */,
 				9EFF98731E3B027F00EABA48 /* AppDelegate.swift in Sources */,
+				9EA099391E3C5D93008FBE85 /* NewObservationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hydroelectric_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginPage" customModule="Hydroelectric_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyU-KK-W34">
                                                 <rect key="frame" x="35" y="82" width="230" height="30"/>
@@ -54,7 +54,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0N-ou-pbm">
                                                 <rect key="frame" x="130" y="118" width="40" height="30"/>
@@ -153,7 +153,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCn-pm-gVP">
                                                 <rect key="frame" x="0.0" y="82" width="230" height="30"/>
@@ -162,7 +162,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70N-FM-W3d">
                                                 <rect key="frame" x="0.0" y="118" width="230" height="30"/>
@@ -171,7 +171,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxv-j4-Onq">
                                                 <rect key="frame" x="87" y="154" width="57" height="30"/>
@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="829.60000000000002" y="122.78860569715144"/>
         </scene>
-        <!--Item 2-->
+        <!--New Observation-->
         <scene sceneID="adk-DC-SJS">
             <objects>
-                <viewController id="C6a-fG-Fi5" sceneMemberID="viewController">
+                <viewController id="C6a-fG-Fi5" customClass="NewObservationViewController" customModule="Hydroelectric_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qsn-hx-9Ka"/>
                         <viewControllerLayoutGuide type="bottom" id="A3K-0C-feW"/>
@@ -242,18 +242,122 @@
                     <view key="view" contentMode="scaleToFill" id="RJs-k6-kXr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVe-q4-y9q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="New Observation" id="tqo-N4-kLc">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Lce-52-cqD">
+                                            <connections>
+                                                <action selector="logoutButton:" destination="C6a-fG-Fi5" id="TJ3-2Y-dhT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="KIl-HF-YYe">
+                                <rect key="frame" x="16" y="44" width="343" height="609"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7R8-di-teg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="437"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2J-vu-iOn">
+                                        <rect key="frame" x="0.0" y="437" width="41" height="21"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Pr-C0-hvc">
+                                        <rect key="frame" x="0.0" y="458" width="25" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMr-16-cXP">
+                                        <rect key="frame" x="0.0" y="488" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7fv-P2-pdO">
+                                        <rect key="frame" x="0.0" y="509" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-UR-caD">
+                                        <rect key="frame" x="0.0" y="559" width="343" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cac-MU-onu">
+                                                <rect key="frame" x="29" y="2" width="34" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Save"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iVe-q4-y9q" firstAttribute="top" secondItem="RJs-k6-kXr" secondAttribute="top" id="Um9-qS-mD7"/>
+                            <constraint firstAttribute="trailing" secondItem="iVe-q4-y9q" secondAttribute="trailing" id="blq-kd-WAF"/>
+                            <constraint firstItem="iVe-q4-y9q" firstAttribute="leading" secondItem="RJs-k6-kXr" secondAttribute="leading" id="uaD-2G-RtN"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="kPr-lz-Gyc"/>
+                    <tabBarItem key="tabBarItem" title="New Observation" id="kPr-lz-Gyc"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="84r-Uh-ozf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3CM-ba-Mut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="1543"/>
+            <point key="canvasLocation" x="1069.5999999999999" y="1463.1184407796104"/>
         </scene>
-        <!--Item 1-->
+        <!--Recently Posted-->
+        <scene sceneID="dPq-Lp-swG">
+            <objects>
+                <viewController title="Recently Posted" id="F16-7L-uhA" customClass="RecentlyPostedViewController" customModule="Hydroelectric_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HTh-Xd-0u3"/>
+                        <viewControllerLayoutGuide type="bottom" id="air-Xu-vUY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k4k-o6-yhZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GL-nI-qn3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ath-Ih-QAw"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Recently Posted" id="XvQ-Aw-bI7">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="MAX-7t-4kp"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5GL-nI-qn3" firstAttribute="top" secondItem="k4k-o6-yhZ" secondAttribute="top" id="En4-dU-M8F"/>
+                            <constraint firstItem="5GL-nI-qn3" firstAttribute="leading" secondItem="k4k-o6-yhZ" secondAttribute="leading" id="LBv-fW-rSv"/>
+                            <constraint firstAttribute="trailing" secondItem="5GL-nI-qn3" secondAttribute="trailing" id="iSL-1l-PJN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recently Posted" id="JxF-Um-xTC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdO-kz-gL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="2230"/>
+        </scene>
+        <!--Saved Observations-->
         <scene sceneID="m66-T0-1Bx">
             <objects>
-                <viewController id="3tO-AE-C96" sceneMemberID="viewController">
+                <viewController title="Saved Observations" id="3tO-AE-C96" customClass="SavedObservationsViewController" customModule="Hydroelectric_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uwF-Bc-DrZ"/>
                         <viewControllerLayoutGuide type="bottom" id="0ZZ-7Y-ptX"/>
@@ -261,13 +365,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ay9-A2-hUC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI6-M4-aLd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LH0-kb-j0C"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <items>
+                                    <navigationItem title="Saved Observations" id="3HM-y2-67o">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="89c-2l-fBe"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KI6-M4-aLd" firstAttribute="leading" secondItem="Ay9-A2-hUC" secondAttribute="leading" id="5vg-64-9ng"/>
+                            <constraint firstAttribute="trailing" secondItem="KI6-M4-aLd" secondAttribute="trailing" id="kby-wf-0Ad"/>
+                            <constraint firstItem="KI6-M4-aLd" firstAttribute="top" secondItem="Ay9-A2-hUC" secondAttribute="top" id="oh3-kG-L9h"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="7jn-L2-Xcs"/>
+                    <tabBarItem key="tabBarItem" title="Saved Notes" id="7jn-L2-Xcs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Shd-FG-bIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="996"/>
+            <point key="canvasLocation" x="1070" y="788"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BIn-sc-UuT">
@@ -281,11 +404,15 @@
                     <connections>
                         <segue destination="3tO-AE-C96" kind="relationship" relationship="viewControllers" id="M8G-KX-idL"/>
                         <segue destination="C6a-fG-Fi5" kind="relationship" relationship="viewControllers" id="9Hn-bJ-Jcp"/>
+                        <segue destination="F16-7L-uhA" kind="relationship" relationship="viewControllers" id="GoQ-Ff-UBk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Auw-pC-QXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="1336"/>
+            <point key="canvasLocation" x="118" y="1172"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="84r-Uh-ozf"/>
+    </inferredMetricsTieBreakers>
 </document>
