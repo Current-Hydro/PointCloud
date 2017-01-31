@@ -11,8 +11,10 @@ import Parse
 import Bolts
 
 class NewObservationViewController: UIViewController {
-    @IBOutlet weak var textView: UITextView!
+    //@IBOutlet weak var textView: UITextView!
+    //@IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textView: UITextView!
     
     @IBAction func logoutButton(_ sender: Any) {
         
@@ -36,14 +38,13 @@ class NewObservationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         textView.layer.cornerRadius = 5
         textView.layer.borderColor = UIColor.lightGray.cgColor
         textView.layer.borderWidth = 1
         
         textField.layer.cornerRadius = 5
         textField.layer.borderColor = UIColor.lightGray.cgColor
-        textField.layer.borderWidth = 1        
+        textField.layer.borderWidth = 1
         
     }
 
