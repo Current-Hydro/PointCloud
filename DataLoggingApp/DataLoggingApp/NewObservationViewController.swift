@@ -11,6 +11,9 @@ import Parse
 import Bolts
 
 class NewObservationViewController: UIViewController {
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var textField: UITextField!
+    
     @IBAction func logoutButton(_ sender: Any) {
         
         // Logout user, and preform segue back to login page
@@ -32,8 +35,16 @@ class NewObservationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        textView.layer.cornerRadius = 5
+        textView.layer.borderColor = UIColor.lightGray.cgColor
+        textView.layer.borderWidth = 1
+        
+        textField.layer.cornerRadius = 5
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.layer.borderWidth = 1        
+        
     }
 
     override func didReceiveMemoryWarning() {
