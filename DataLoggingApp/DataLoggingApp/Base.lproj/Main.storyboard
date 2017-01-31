@@ -243,21 +243,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVe-q4-y9q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Xpq-Sb-UmC"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="New Observation" id="tqo-N4-kLc">
-                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Lce-52-cqD">
-                                            <connections>
-                                                <action selector="logoutButton:" destination="C6a-fG-Fi5" id="TJ3-2Y-dhT"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3q-9q-Dbx">
                                 <rect key="frame" x="0.0" y="64" width="375" height="687"/>
                                 <subviews>
@@ -277,7 +262,7 @@
                                                             <action selector="uploadImage:" destination="C6a-fG-Fi5" eventType="touchUpInside" id="lrJ-lG-4zB"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ea3-4x-b9t">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ea3-4x-b9t">
                                                         <rect key="frame" x="0.0" y="33" width="290" height="250"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="290" id="Lk4-eC-sMA"/>
@@ -354,6 +339,21 @@
                                     <constraint firstAttribute="bottom" secondItem="ALF-dk-DVK" secondAttribute="bottom" id="t5C-a5-xe5"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVe-q4-y9q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Xpq-Sb-UmC"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="New Observation" id="tqo-N4-kLc">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Lce-52-cqD">
+                                            <connections>
+                                                <action selector="logoutButton:" destination="C6a-fG-Fi5" id="TJ3-2Y-dhT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

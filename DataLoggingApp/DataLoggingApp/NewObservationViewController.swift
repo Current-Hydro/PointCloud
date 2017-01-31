@@ -10,15 +10,34 @@ import UIKit
 import Parse
 import Bolts
 
-class NewObservationViewController: UIViewController {
+class NewObservationViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     // Outlets for text fields and image views
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     
+    // Get image after image is picked
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            imageView.image = image
+        } else{
+            print("There was a problem")
+        }
+        
+        self.dismiss(animated: true) { 
+            // Nothing happens after image is uploaded
+        }
+    }
+    
     
     // Function when image is uploaded
     @IBAction func uploadImage(_ sender: Any) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        imagePickerController.allowsEditing = false
+        
+        self.present(imagePickerController, animated: true, completion: nil)
         
     }
     
