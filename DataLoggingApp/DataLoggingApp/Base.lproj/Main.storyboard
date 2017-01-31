@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="895"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKA-lz-NgQ">
@@ -240,7 +240,7 @@
                         <viewControllerLayoutGuide type="bottom" id="A3K-0C-feW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RJs-k6-kXr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="895"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVe-q4-y9q">
@@ -259,7 +259,7 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3q-9q-Dbx">
-                                <rect key="frame" x="0.0" y="64" width="375" height="782"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="687"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALF-dk-DVK">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
@@ -273,11 +273,14 @@
                                                             <constraint firstAttribute="height" constant="30" id="3kX-ZJ-LXz"/>
                                                         </constraints>
                                                         <state key="normal" title="Add/Change Image"/>
+                                                        <connections>
+                                                            <action selector="uploadImage:" destination="C6a-fG-Fi5" eventType="touchUpInside" id="lrJ-lG-4zB"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ea3-4x-b9t">
-                                                        <rect key="frame" x="0.0" y="33" width="320" height="250"/>
+                                                        <rect key="frame" x="0.0" y="33" width="290" height="250"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="320" id="Lk4-eC-sMA"/>
+                                                            <constraint firstAttribute="width" constant="290" id="Lk4-eC-sMA"/>
                                                             <constraint firstAttribute="height" constant="250" id="tId-oY-8Va"/>
                                                         </constraints>
                                                     </imageView>
@@ -321,6 +324,9 @@
                                                             <constraint firstAttribute="height" constant="30" id="9zU-uu-Z0K"/>
                                                         </constraints>
                                                         <state key="normal" title="Post"/>
+                                                        <connections>
+                                                            <action selector="postObservation:" destination="C6a-fG-Fi5" eventType="touchUpInside" id="Roa-pg-IjM"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -365,8 +371,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="New Observation" id="kPr-lz-Gyc"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="895"/>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="imageView" destination="ea3-4x-b9t" id="9Ma-95-qsK"/>
                         <outlet property="textField" destination="z4T-Wp-reS" id="DsC-sK-od1"/>
                         <outlet property="textView" destination="UtR-Py-0Bb" id="67u-61-PGT"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="84r-Uh-ozf"/>

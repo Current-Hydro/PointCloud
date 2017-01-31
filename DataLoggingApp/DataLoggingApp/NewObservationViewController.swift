@@ -11,11 +11,24 @@ import Parse
 import Bolts
 
 class NewObservationViewController: UIViewController {
-    //@IBOutlet weak var textView: UITextView!
-    //@IBOutlet weak var textField: UITextField!
+    // Outlets for text fields and image views
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
     
+    
+    // Function when image is uploaded
+    @IBAction func uploadImage(_ sender: Any) {
+        
+    }
+    
+    
+    // Function for posting observation
+    @IBAction func postObservation(_ sender: Any) {
+        
+    }
+    
+    //Logout Function
     @IBAction func logoutButton(_ sender: Any) {
         
         // Logout user, and preform segue back to login page
