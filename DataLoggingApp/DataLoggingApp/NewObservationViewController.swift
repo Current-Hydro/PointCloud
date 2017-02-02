@@ -30,6 +30,23 @@ class NewObservationViewController: UIViewController, UINavigationControllerDele
     }
     
     
+    // Activity Indicator for activating app spinner
+    var activityIndicator = UIActivityIndicatorView()
+    func pauseApp(){
+        activityIndicator = UIActivityIndicatorView(frame: CGRect(x:0,y:0,width:50,height:50))
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        UIApplication.shared.beginIgnoringInteractionEvents()
+    }
+    
+    func restoreApp(){
+        activityIndicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+    }
+    
+    ////
+    
     // Function when image is uploaded
     @IBAction func uploadImage(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
@@ -41,10 +58,39 @@ class NewObservationViewController: UIViewController, UINavigationControllerDele
         
     }
     
-    
     // Function for posting observation
     @IBAction func postObservation(_ sender: Any) {
-        
+        print("posting image")
+        pauseApp()
+        if textField.text != "" && textView.text != "" && imageView.image != nil{
+            if let image = imageView.image as UIImage!{
+                let imageData = UIImagePNGRepresentation(image)
+                let imageFile = PFFile(name: "image.png", data: imageData!)
+                
+                let userObservation = PFObject(className: "UserObservations")
+                userObservation["imageFile"] = imageFile
+                userObservation["title"] = textField.text
+                userObservation["note"]=textView.text
+                userObservation.saveInBackground(block: { (success, error) in
+                    if error == nil{
+                        self.restoreApp()
+                        self.displayAlert(title: "Upload Success!", message: "Observation uploaded successfully", buttonMessage: [("OK")])
+                    }else{
+                        self.restoreApp()
+                        var displayErrorMessage = "Please try again later"
+                        if let errorMessage = (error! as NSError).userInfo["error"] as? String{
+                            displayErrorMessage = errorMessage
+                        }
+                        self.displayAlert(title: "Error", message: displayErrorMessage, buttonMessage: ["OK"])
+
+                    }
+                })
+            }
+        }
+        else{
+            print("Check text fields")
+        }
+        restoreApp()
     }
     
     //Logout Function

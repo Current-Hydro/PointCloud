@@ -174,7 +174,7 @@
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxv-j4-Onq">
-                                                <rect key="frame" x="86" y="154" width="57" height="30"/>
+                                                <rect key="frame" x="87" y="154" width="57" height="30"/>
                                                 <state key="normal" title="Register"/>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-xF-FdD">
@@ -310,7 +310,7 @@
                                                         </constraints>
                                                         <state key="normal" title="Post"/>
                                                         <connections>
-                                                            <action selector="postObservation:" destination="C6a-fG-Fi5" eventType="touchUpInside" id="Roa-pg-IjM"/>
+                                                            <action selector="postObservation:" destination="C6a-fG-Fi5" eventType="touchUpInside" id="TKX-la-orM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
