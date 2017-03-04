@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLloc</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -38,6 +40,12 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>So we can post photos to server</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>So we can access your area&apos;s temperature</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>So we can acess your area&apos;s temperature</string>
+	<key>NSLocationAlwaysUseUsageDescription</key>
+	<string>So we can access your area&apos;s temperature</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

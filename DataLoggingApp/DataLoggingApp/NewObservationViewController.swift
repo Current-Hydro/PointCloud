@@ -9,14 +9,24 @@
 import UIKit
 import Parse
 import Bolts
+import MapKit
+import CoreLocation
 
-class NewObservationViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    // Outlets for text fields and image views
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var textView: UITextView!
+class NewObservationViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var imageView: UIImageView!
+    // Outlets for text fields and image views
+        // Get image after image is picked
     
-    // Get image after image is picked
+    /// Set up for getting user location ///
+    let locationManager = CLLocationManager()
+    @IBOutlet weak var temperature: UITextField!
+    @IBOutlet weak var weather: UITextField!
+    @IBOutlet weak var trafficConditions: UITextField!
+    @IBOutlet weak var crossingLocation: UITextField!
+    @IBOutlet weak var liveOrDead: UITextField!
+    @IBOutlet weak var species: UITextField!
+    
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
             imageView.image = image
@@ -30,22 +40,21 @@ class NewObservationViewController: UIViewController, UINavigationControllerDele
     }
     
     
-    // Activity Indicator for activating app spinner
-    var activityIndicator = UIActivityIndicatorView()
-    func pauseApp(){
-        activityIndicator = UIActivityIndicatorView(frame: CGRect(x:0,y:0,width:50,height:50))
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        UIApplication.shared.beginIgnoringInteractionEvents()
+    // Activity Indicator //
+    var activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y:0, width: 50, height:50))
+    
+    func pauseApp() {
+        activityIndicator.startAnimating()
+        view.addSubview(activityIndicator)
+        view.isUserInteractionEnabled = false
     }
     
-    func restoreApp(){
+    func restoreApp() {
         activityIndicator.stopAnimating()
-        UIApplication.shared.endIgnoringInteractionEvents()
+        self.view.isUserInteractionEnabled = true
     }
+    //
     
-    ////
     
     // Function when image is uploaded
     @IBAction func uploadImage(_ sender: Any) {
@@ -58,39 +67,93 @@ class NewObservationViewController: UIViewController, UINavigationControllerDele
         
     }
     
+    func getWeather(){
+        locationManager.requestLocation()
+        locationManager.stopUpdatingLocation()
+        
+        self.pauseApp()
+        
+        let urlString = "https://api.darksky.net/forecast/9030fc9b86a5c76bd83ac199a0190219/\(userLatitude),\(userLongitude)"
+        
+        let url = URL(string: urlString)
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil{
+                print(error ?? String())
+            } else{
+                do{
+                    let parsedData = try JSONSerialization.jsonObject(with: data!, options: [])  as! [String:Any]
+                    let currentConditions = parsedData["currently"] as! [String:Any]
+                    
+                    print (currentConditions)
+                    
+                    let currentTemperatureF = currentConditions["temperature"] as! Double
+                    let weatherSummary = currentConditions["summary"] as! String
+                    print(currentTemperatureF)
+                    
+                    self.temperature.text = "\(currentTemperatureF)"
+                    self.weather.text = "\(weatherSummary)"
+                    self.restoreApp()
+                
+                } catch let error as NSError{
+                    print(error)
+                    self.restoreApp()
+                }
+            }
+            }.resume()
+    }
+    
     // Function for posting observation
     @IBAction func postObservation(_ sender: Any) {
         print("posting image")
-        pauseApp()
-        if textField.text != "" && textView.text != "" && imageView.image != nil{
-            if let image = imageView.image as UIImage!{
-                let imageData = UIImagePNGRepresentation(image)
-                let imageFile = PFFile(name: "image.png", data: imageData!)
-                
-                let userObservation = PFObject(className: "UserObservations")
-                userObservation["imageFile"] = imageFile
-                userObservation["title"] = textField.text
-                userObservation["note"]=textView.text
-                userObservation.saveInBackground(block: { (success, error) in
-                    if error == nil{
-                        self.restoreApp()
-                        self.displayAlert(title: "Upload Success!", message: "Observation uploaded successfully", buttonMessage: [("OK")])
-                    }else{
-                        self.restoreApp()
-                        var displayErrorMessage = "Please try again later"
-                        if let errorMessage = (error! as NSError).userInfo["error"] as? String{
-                            displayErrorMessage = errorMessage
-                        }
-                        self.displayAlert(title: "Error", message: displayErrorMessage, buttonMessage: ["OK"])
-
+        
+        //getWeather()
+        
+        //pauseApp()
+        
+        if crossingLocation.text != "" && weather.text != ""{
+        
+            // Get image data and convert it to a PFFile
+            let imageData = UIImagePNGRepresentation(imageView.image!)
+            let imageFile = PFFile(name: "image.png", data: imageData!)
+            let userObservation = PFObject(className: "Observations")
+            
+            // Prepare objects to be posted to server
+            userObservation["imageFile"] = imageFile
+            userObservation["temperature"] = temperature.text
+            userObservation["weather"] = weather.text
+            userObservation["trafficConditions"] = trafficConditions.text
+            userObservation["crossingLocation"] = crossingLocation.text
+            userObservation["liveOrDead"] = liveOrDead.text
+            userObservation["species"] = species.text
+            userObservation["crossingLocation"] = crossingLocation.text
+            userObservation["userId"]=PFUser.current()?.objectId
+            
+            userObservation.saveInBackground(block: { (success, error) in
+                if error == nil{
+                    self.restoreApp()
+                    self.displayAlert(title: "Upload Success!", message: "Observation uploaded successfully", buttonMessage: [("OK")])
+                    self.weather.text=""
+                    self.trafficConditions.text=""
+                    self.crossingLocation.text=""
+                    self.liveOrDead.text=""
+                    self.weather.text=""
+                    self.imageView.image = nil
+                }else{
+                    self.restoreApp()
+                    var displayErrorMessage = "Please try again later"
+                    if let errorMessage = (error! as NSError).userInfo["error"] as? String{
+                        displayErrorMessage = errorMessage
                     }
-                })
-            }
+                    self.displayAlert(title: "Error", message: displayErrorMessage, buttonMessage: ["OK"])
+
+                }
+            })
         }
         else{
             print("Check text fields")
+            restoreApp()
+            displayAlert(title: "Error", message: "You cannot have empty field(s)", buttonMessage: [("OK")])
         }
-        restoreApp()
     }
     
     //Logout Function
@@ -110,25 +173,57 @@ class NewObservationViewController: UIViewController, UINavigationControllerDele
         }))
         
         self.present(alert, animated: true, completion: nil)
-        
-    }
+        }
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        textView.layer.cornerRadius = 5
-        textView.layer.borderColor = UIColor.lightGray.cgColor
-        textView.layer.borderWidth = 1
+        // Setup for spinner //
+        activityIndicator.hidesWhenStopped = true;
+        activityIndicator.activityIndicatorViewStyle  = UIActivityIndicatorViewStyle.gray;
+        activityIndicator.center = view.center;
+        ///////////////////////
         
-        textField.layer.cornerRadius = 5
-        textField.layer.borderColor = UIColor.lightGray.cgColor
-        textField.layer.borderWidth = 1
+        
+        // Setup for location services
+        // Asking for authorization from user
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+            locationManager.startUpdatingLocation()
+        }
+        
+        // Get user's current location
+        super.viewDidLoad()
+        
+        //getWeather()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error){
+        print(error)
+    }
+    
+    // Variables to hold the users latitude and longitude
+    var userLatitude = 0.0
+    var userLongitude = 0.0
+    func locationManager(_ manager: CLLocationManager,didUpdateLocations locations:[CLLocation]){
+        
+        //let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        //locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        //print("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+        // Get the user's latitude and longitude
+        //userLatitude = locValue.latitude
+        //userLongitude = locValue.longitude
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated.
     }
     
 
